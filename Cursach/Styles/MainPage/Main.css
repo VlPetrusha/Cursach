@@ -1,0 +1,523 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../../Images/background_audi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header .header_title {
+  transition: 0.3s;
+  align-self: center;
+  width: 40%;
+  background: rgba(77, 77, 79, 0.15);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+}
+header .header_title:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  color: white;
+}
+header nav {
+  background: black;
+  height: 11vh;
+}
+header nav .nav_interface {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
+}
+header nav .nav_interface .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: default;
+}
+header nav .nav_interface .logo svg {
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+header nav .nav_interface .logo svg path {
+  transition: 0.3s;
+}
+header nav .nav_interface .logo svg:hover {
+  transition: 0.3s;
+}
+header nav .nav_interface .logo svg:hover path {
+  transition: 0.3s;
+  fill: #f20530;
+}
+header nav .nav_interface .logo h1 {
+  color: #f20530;
+}
+header nav .nav_interface .interface {
+  display: flex;
+  gap: 2vw;
+  color: white;
+}
+header nav .nav_interface .interface a {
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(white, white);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+}
+header nav .nav_interface .interface a:hover {
+  transition: 0.3s;
+  background-size: 100% 3px;
+}
+header nav .nav_interface .profile {
+  transition: 0.3s;
+  cursor: pointer;
+}
+header nav .nav_interface .profile:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+header .choise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+header .choise button,
+header .choise a {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background: rgba(77, 77, 79, 0.15);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+}
+header .choise button svg,
+header .choise a svg {
+  fill: white;
+}
+header .choise button:hover,
+header .choise a:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5vh;
+  margin-top: 10vh;
+  color: white;
+}
+main .title {
+  text-align: center;
+}
+main .about_us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .about_us .about_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  width: 36vw;
+  font-size: 1.2em;
+}
+main .about_us .about_info p {
+  margin: 0;
+}
+main .about_us .about_info ol {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 0;
+}
+main .about_us img {
+  width: 41vw;
+}
+main .models {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .models .model {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  width: 36vw;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+main .models .model:hover .model_info {
+  transition: 0.3s;
+  transform: translateY(0vh);
+  z-index: 1;
+}
+main .models .model:hover .model_info a {
+  transition: 0.3s;
+  color: white;
+  border: 2px solid white;
+}
+main .models .model .model_info {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transform: translateY(-10vh);
+  z-index: -1;
+}
+main .models .model .model_info a {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 5vh;
+  background: transparent;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5vh;
+  width: 100%;
+  color: white;
+}
+footer h1 {
+  color: rgb(242, 5, 48);
+  cursor: pointer;
+}
+footer p {
+  align-self: center;
+}
+
+.pre_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.pre_footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+.pre_footer ul li a {
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pre_footer ul li a:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.contacts h1 {
+  font-size: 2em;
+  margin: 0;
+}
+.contacts .svgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts .svgs svg {
+  width: 4.5vh;
+  height: 4.5vh;
+  fill: white;
+  cursor: pointer;
+}
+
+.burger {
+  transition: 0.3s;
+  display: none;
+  fill: white !important;
+  cursor: pointer;
+}
+.burger:hover {
+  transition: 0.3s;
+  scale: 1.05;
+}
+
+.burger_instead {
+  display: flex;
+}
+
+.burger_meny {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+  padding-top: 2vh;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0d;
+  color: white;
+  z-index: 10;
+}
+.burger_meny a {
+  transition: 0.3s;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: linear-gradient(white, white);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  color: white;
+}
+.burger_meny a:hover {
+  transition: 0.3s;
+  background-size: 100% 3px;
+}
+.burger_meny .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.burger_meny .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: default;
+}
+.burger_meny .logo svg {
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+.burger_meny .logo svg path {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover path {
+  transition: 0.3s;
+  fill: #d6062c;
+}
+.burger_meny .logo h1 {
+  color: #d6062c;
+}
+
+* {
+  font-family: "Open Sans";
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+}
+body.opened {
+  overflow: hidden;
+}
+body::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0);
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  width: 2vw;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 86vw;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../Fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  main .about_us .about_info {
+    font-size: 1em;
+  }
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  header nav .nav_interface .interface {
+    gap: 4vw;
+  }
+}
+@media (max-width: 700px) and (min-width: 500px) {
+  header .choise button,
+  header .choise a {
+    width: 20vw;
+  }
+  header .header_title {
+    width: 80%;
+  }
+  .interface p {
+    font-size: 0.8em;
+  }
+  main .about_us .about_info {
+    font-size: 0.8em;
+  }
+  main .title {
+    font-size: 1.4em;
+  }
+  main .models {
+    transition: 0.3s;
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+  main .models .model {
+    width: 86vw;
+  }
+}
+@media (max-width: 500px) and (min-width: 0px) {
+  .burger {
+    display: block;
+  }
+  .burger_instead {
+    display: none !important;
+  }
+  header {
+    background: url("../../Images/phone.jpg");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+  }
+  header .choise button,
+  header .choise a {
+    width: 30vw;
+  }
+  header .header_title {
+    width: 90%;
+  }
+  main .about_us {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  main .about_us img {
+    width: 100%;
+  }
+  main .about_us .about_info {
+    gap: 10px;
+    width: 100%;
+    font-size: 0.8em !important;
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  header nav .nav_interface .logo {
+    font-size: 0.9em;
+  }
+  header nav .nav_interface .logo img {
+    width: 10vw;
+  }
+  header nav .nav_interface .interface {
+    font-size: 0.8em;
+  }
+  header nav .nav_interface .profile {
+    width: 10vw;
+  }
+  main {
+    margin-top: 2vh;
+  }
+  main .about_us .about_info {
+    font-size: 0.6em;
+  }
+  main .models {
+    transition: 0.3s;
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+  main .models .model {
+    width: 86vw;
+  }
+  main .models .model .model_info button {
+    align-items: center;
+    width: 25vw;
+    height: 4vh;
+  }
+}
+@media (max-width: 400px) and (min-width: 100px) {
+  header nav {
+    height: 8vh;
+  }
+  footer {
+    margin-top: 0;
+  }
+  footer h1 {
+    font-size: 1em;
+  }
+  footer p {
+    font-size: 0.6em;
+  }
+  header nav .nav_interface {
+    height: 8vh;
+  }
+  header nav .nav_interface .logo {
+    font-size: 0.7em;
+  }
+  header nav .nav_interface .logo img {
+    width: 8vw;
+  }
+  header nav .nav_interface .interface {
+    font-size: 0.6em;
+  }
+  header nav .nav_interface .profile {
+    width: 8vw;
+  }
+  header .choise button {
+    width: 30vw;
+  }
+  main {
+    margin-top: 2vh;
+  }
+  main .title {
+    font-size: 1.2em;
+  }
+  main .about_us .about_info {
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=Main.css.map */

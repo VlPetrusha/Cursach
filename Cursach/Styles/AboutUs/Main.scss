@@ -1,0 +1,115 @@
+@import './header';
+@import './mains';
+@import './footer';
+@import '../burger';
+
+* {
+  font-family: 'Open Sans';
+
+  color: white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #0d0d0d;
+
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    background: none;
+
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: white;
+
+    width: 2vw;
+
+    border-radius: 5px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 86vw;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../Fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .header_content .content {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  .header_content .content {
+    width: 55vw;
+  }
+
+  .container {
+    width: 96vw;
+  }
+
+  .interface p {
+    font-size: 0.8em;
+  }
+
+  main {
+    & h1,
+    h2 {
+      font-size: 1.5em;
+    }
+
+    & p,
+    li {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 100px) {
+  .burger {
+    display: flex;
+  }
+
+  .burger_instead {
+    display: none;
+  }
+
+  .header_content .content {
+    width: 96%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    & h1,
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  main {
+    & h1,
+    h2 {
+      font-size: 1.2em;
+
+      margin: 10px;
+    }
+
+    & p,
+    li {
+      font-size: 0.7em;
+    }
+  }
+}

@@ -1,0 +1,338 @@
+header {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-image: url('../../Images/audi_group.jpg');
+	background-position-y: 40%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header nav {
+	background: #0d0d0d;
+}
+header nav .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 11vh;
+}
+header nav .container .logo {
+	display: flex;
+	align-items: center;
+	gap: 1.5vw;
+	cursor: default;
+}
+header nav .container .logo svg {
+	width: 7vh;
+	height: 7vh;
+	cursor: pointer;
+}
+header nav .container .logo svg path {
+	transition: 0.3s;
+}
+header nav .container .logo svg:hover {
+	transition: 0.3s;
+}
+header nav .container .logo svg:hover path {
+	transition: 0.3s;
+	fill: #d6062c;
+}
+header nav .container .logo h1 {
+	color: #d6062c;
+}
+header nav .container .profile {
+	transition: 0.3s;
+	cursor: pointer;
+}
+header nav .container .profile:hover {
+	transition: 0.3s;
+	transform: scale(1.05);
+}
+
+.interface {
+	display: flex;
+	gap: 2vw;
+	color: white;
+}
+.interface a {
+	transition: 0.3s;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+	background-image: linear-gradient(white, white);
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 3px;
+}
+.interface a:hover {
+	transition: 0.3s;
+	background-size: 100% 3px;
+}
+
+.header_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.header_content .content {
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40vh;
+	width: 30vw;
+	height: 40vh;
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+	border: none;
+	border-radius: 25px;
+}
+.header_content .content h1,
+.header_content .content h2 {
+	color: black;
+}
+.header_content .content:hover {
+	transition: 0.3s;
+	scale: 1.05;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ol {
+	padding: 0;
+}
+
+.advantages {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5vh;
+	width: 100%;
+	color: white;
+}
+footer h1 {
+	color: rgb(242, 5, 48);
+	cursor: pointer;
+}
+footer p {
+	align-self: center;
+}
+
+.pre_footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.pre_footer ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0;
+	list-style-type: none;
+}
+.pre_footer ul li a {
+	transition: 0.3s;
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+.pre_footer ul li a:hover {
+	transition: 0.3s;
+	transform: scale(1.05);
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+}
+.contacts h1 {
+	font-size: 2em;
+	margin: 0;
+}
+.contacts .svgs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.contacts .svgs svg {
+	width: 4.5vh;
+	height: 4.5vh;
+	fill: white;
+	cursor: pointer;
+}
+
+.burger {
+	transition: 0.3s;
+	display: none;
+	fill: white !important;
+	cursor: pointer;
+}
+.burger:hover {
+	transition: 0.3s;
+	scale: 1.05;
+}
+
+.burger_instead {
+	display: flex;
+}
+
+.burger_meny {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4vh;
+	padding-top: 2vh;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: #0d0d0d;
+	color: white;
+	z-index: 10;
+}
+.burger_meny a {
+	transition: 0.3s;
+	font-size: 1.2em;
+	text-decoration: none;
+	cursor: pointer;
+	background-image: linear-gradient(white, white);
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 3px;
+	color: white;
+}
+.burger_meny a:hover {
+	transition: 0.3s;
+	background-size: 100% 3px;
+}
+.burger_meny .head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+}
+.burger_meny .logo {
+	display: flex;
+	align-items: center;
+	gap: 1.5vw;
+	cursor: default;
+}
+.burger_meny .logo svg {
+	width: 7vh;
+	height: 7vh;
+	cursor: pointer;
+}
+.burger_meny .logo svg path {
+	transition: 0.3s;
+}
+.burger_meny .logo svg:hover {
+	transition: 0.3s;
+}
+.burger_meny .logo svg:hover path {
+	transition: 0.3s;
+	fill: #d6062c;
+}
+.burger_meny .logo h1 {
+	color: #d6062c;
+}
+
+* {
+	font-family: 'Open Sans';
+	color: white;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #0d0d0d;
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	background: none;
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+	background: white;
+	width: 2vw;
+	border-radius: 5px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 86vw;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../../Fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+@media (max-width: 1000px) and (min-width: 700px) {
+	.header_content .content {
+		width: 40vw;
+	}
+}
+@media (max-width: 700px) and (min-width: 500px) {
+	.header_content .content {
+		width: 55vw;
+	}
+	.container {
+		width: 96vw;
+	}
+	.interface p {
+		font-size: 0.8em;
+	}
+	main h1,
+	main h2 {
+		font-size: 1.5em;
+	}
+	main p,
+	main li {
+		font-size: 0.8em;
+	}
+}
+@media (max-width: 500px) and (min-width: 100px) {
+	.burger {
+		display: flex;
+	}
+	.burger_instead {
+		display: none;
+	}
+	.header_content .content {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header_content .content h1,
+	.header_content .content h2 {
+		font-size: 1.2em;
+	}
+	main h1,
+	main h2 {
+		font-size: 1.2em;
+		margin: 10px;
+	}
+	main p,
+	main li {
+		font-size: 0.7em;
+	}
+} /*# sourceMappingURL=Main.css.map */

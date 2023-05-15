@@ -1,0 +1,78 @@
+@import './mains';
+@import '../burger';
+
+* {
+  font-family: 'Open Sans';
+
+  color: white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #0d0d0d;
+
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    background: none;
+
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: white;
+
+    width: 2vw;
+
+    border-radius: 5px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 86vw;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../Fonts/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  input,
+  button {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 700px) and (min-width: 500px) {
+  input,
+  button {
+    width: 70vw;
+  }
+
+  .interface p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 100px) {
+  .burger {
+    display: flex;
+  }
+
+  .burger_instead {
+    display: none;
+  }
+
+  input,
+  button {
+    width: 90%;
+  }
+}

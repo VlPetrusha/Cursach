@@ -1,0 +1,245 @@
+nav {
+  background: #0d0d0d;
+
+  & .container {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 11vh;
+
+    & .logo {
+      display: flex;
+
+      align-items: center;
+
+      gap: 1.5vw;
+
+      cursor: default;
+
+      & svg {
+        width: 7vh;
+        height: 7vh;
+
+        cursor: pointer;
+
+        & path {
+          transition: 0.3s;
+        }
+
+        &:hover {
+          transition: 0.3s;
+
+          & path {
+            transition: 0.3s;
+
+            fill: #d6062c;
+          }
+        }
+      }
+
+      & h1 {
+        color: #d6062c;
+      }
+    }
+
+    & .profile {
+      transition: 0.3s;
+
+      cursor: pointer;
+
+      &:hover {
+        transition: 0.3s;
+
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.interface {
+  display: flex;
+
+  gap: 2vw;
+
+  color: white;
+
+  & a {
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    color: white;
+
+    text-decoration: none;
+
+    background-image: linear-gradient(white, white);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+
+    &:hover {
+      transition: 0.3s;
+
+      background-size: 100% 3px;
+    }
+  }
+}
+
+main {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  gap: 3vh;
+
+  & p {
+    margin-top: 5vh;
+  }
+}
+
+input,
+button {
+  width: 40vw;
+  height: 8vh;
+
+  box-sizing: border-box;
+}
+
+input {
+  transition: 0.3s;
+
+  background: transparent;
+
+  border: none;
+
+  outline-color: white;
+  outline-style: solid;
+  outline-width: 3px;
+
+  text-align: center;
+
+  font-size: 1.4em;
+
+  &:is(:hover, :focus) {
+    transition: 0.3s;
+
+    outline-offset: 5px;
+  }
+}
+
+button {
+  transition: 0.3s;
+
+  background: #f20530;
+
+  border: none;
+
+  outline-color: white;
+  outline-style: solid;
+  outline-width: 3px;
+
+  text-align: center;
+
+  font-size: 1.4em;
+
+  cursor: pointer;
+
+  &:is(:hover, :focus) {
+    transition: 0.3s;
+
+    outline-offset: 5px;
+  }
+}
+
+footer {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 10vh !important;
+
+  width: 100%;
+
+  color: white;
+
+  & h1 {
+    color: rgba(242, 5, 48, 1);
+
+    cursor: pointer;
+  }
+
+  & p {
+    align-self: center;
+  }
+}
+
+.pre_footer {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  & ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 0;
+
+    list-style-type: none;
+
+    & li a {
+      transition: 0.3s;
+
+      cursor: pointer;
+
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        transition: 0.3s;
+
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1vh;
+
+  & h1 {
+    font-size: 2em;
+
+    margin: 0;
+  }
+
+  & .svgs {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    & svg {
+      width: 4.5vh;
+      height: 4.5vh;
+
+      fill: white;
+
+      cursor: pointer;
+    }
+  }
+}

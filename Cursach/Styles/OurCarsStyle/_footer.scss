@@ -1,0 +1,88 @@
+footer.container {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 1vh;
+
+  margin-top: 5vh;
+
+  color: white;
+
+  & h1 {
+    color: rgba(242, 5, 48, 1);
+
+    cursor: pointer;
+  }
+
+  & p {
+    align-self: center;
+  }
+}
+
+.pre_footer {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  & ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 0;
+
+    list-style-type: none;
+
+    & li a {
+      transition: 0.3s;
+
+      cursor: pointer;
+
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        transition: 0.3s;
+
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1vh;
+
+  & h1 {
+    font-size: 2em;
+
+    margin: 0;
+  }
+
+  & .svgs {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    & svg {
+      width: 4.5vh;
+      height: 4.5vh;
+
+      fill: white;
+
+      cursor: pointer;
+    }
+  }
+}

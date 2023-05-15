@@ -1,0 +1,143 @@
+header {
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100vh;
+
+  background-image: url('../../Images/audi_group.jpg');
+  background-position-y: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & nav {
+    background: #0d0d0d;
+
+    & .container {
+      display: flex;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 11vh;
+
+      & .logo {
+        display: flex;
+
+        align-items: center;
+
+        gap: 1.5vw;
+
+        cursor: default;
+
+        & svg {
+          width: 7vh;
+          height: 7vh;
+
+          cursor: pointer;
+
+          & path {
+            transition: 0.3s;
+          }
+
+          &:hover {
+            transition: 0.3s;
+
+            & path {
+              transition: 0.3s;
+
+              fill: #d6062c;
+            }
+          }
+        }
+
+        & h1 {
+          color: #d6062c;
+        }
+      }
+
+      & .profile {
+        transition: 0.3s;
+
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.3s;
+
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.interface {
+  display: flex;
+
+  gap: 2vw;
+
+  color: white;
+
+  & a {
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    color: white;
+
+    text-decoration: none;
+
+    background-image: linear-gradient(white, white);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+
+    &:hover {
+      transition: 0.3s;
+
+      background-size: 100% 3px;
+    }
+  }
+}
+
+.header_content {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  & .content {
+    transition: 0.3s;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40vh;
+
+    width: 30vw;
+    height: 40vh;
+
+    background: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(2px);
+
+    border: none;
+    border-radius: 25px;
+
+    & h1,
+    h2 {
+      color: black;
+    }
+
+    &:hover {
+      transition: 0.3s;
+
+      scale: 1.05;
+    }
+  }
+}

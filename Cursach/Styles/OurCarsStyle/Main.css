@@ -1,0 +1,467 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: 0D0D0D;
+  height: 11vh;
+}
+header nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: default;
+}
+header nav .logo svg {
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+header nav .logo svg path {
+  transition: 0.3s;
+}
+header nav .logo svg:hover {
+  transition: 0.3s;
+}
+header nav .logo svg:hover path {
+  transition: 0.3s;
+  fill: #d6062c;
+}
+header nav .logo h1 {
+  color: #d6062c;
+}
+header nav .profile {
+  transition: 0.3s;
+  cursor: pointer;
+}
+header nav .profile:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.interface {
+  display: flex;
+  gap: 2vw;
+  color: white;
+}
+.interface a {
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(white, white);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+}
+.interface a:hover {
+  transition: 0.3s;
+  background-size: 100% 3px;
+}
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.header_text {
+  width: 80%;
+  color: white;
+  text-align: center;
+  align-self: center;
+}
+
+.models {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.models .model {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  width: 36vw;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.models .model:hover .model_info {
+  transition: 0.3s transform;
+  transform: translateY(0vh);
+  z-index: 10;
+}
+.models .model:hover .model_info a {
+  transition: 0.3s;
+  border: 2px solid white;
+}
+.models .model .model_info {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-10vh);
+  z-index: -1;
+}
+.models .model .model_info a {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8vw;
+  height: 5vh;
+  background: transparent;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+main.container {
+  display: flex;
+  flex-direction: column;
+}
+main.container .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10vw;
+  height: 35vh;
+  border-bottom: 2px solid #d6062c;
+  border-top: 2px solid #d6062c;
+  color: white;
+}
+main.container .card img {
+  height: 90%;
+  flex-basis: 40%;
+}
+main.container .card a {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 8vw;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+main.container .card a:hover {
+  transition: 0.3s;
+  scale: 1.05;
+}
+main.container .card .card_info {
+  margin-right: auto;
+}
+
+footer.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vh;
+  margin-top: 5vh;
+  color: white;
+}
+footer.container h1 {
+  color: rgb(242, 5, 48);
+  cursor: pointer;
+}
+footer.container p {
+  align-self: center;
+}
+
+.pre_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.pre_footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+.pre_footer ul li a {
+  transition: 0.3s;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.pre_footer ul li a:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.contacts h1 {
+  font-size: 2em;
+  margin: 0;
+}
+.contacts .svgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts .svgs svg {
+  width: 4.5vh;
+  height: 4.5vh;
+  fill: white;
+  cursor: pointer;
+}
+
+.burger {
+  transition: 0.3s;
+  display: none;
+  fill: white !important;
+  cursor: pointer;
+}
+.burger:hover {
+  transition: 0.3s;
+  scale: 1.05;
+}
+
+.burger_instead {
+  display: flex;
+}
+
+.burger_meny {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+  padding-top: 2vh;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0d0d0d;
+  color: white;
+  z-index: 10;
+}
+.burger_meny a {
+  transition: 0.3s;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: linear-gradient(white, white);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  color: white;
+}
+.burger_meny a:hover {
+  transition: 0.3s;
+  background-size: 100% 3px;
+}
+.burger_meny .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.burger_meny .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: default;
+}
+.burger_meny .logo svg {
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+.burger_meny .logo svg path {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover path {
+  transition: 0.3s;
+  fill: #d6062c;
+}
+.burger_meny .logo h1 {
+  color: #d6062c;
+}
+
+* {
+  font-family: "Open Sans";
+  color: white;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #0d0d0d;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  background: none;
+  width: 2vw;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  width: 2vw;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 86vw;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../Fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@media (max-width: 1000px) and (min-width: 700px) {
+  main.container .card .card_info {
+    margin: 0;
+  }
+  main.container .card {
+    height: 40vh;
+    gap: 5vw;
+  }
+  main.container .card img {
+    width: 60vw;
+  }
+  main.container .card p {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 700px) and (min-width: 500px) {
+  main.container .card .card_info {
+    margin: 0;
+  }
+  .interface p {
+    font-size: 0.8em;
+  }
+  main.container .card {
+    height: 30vh;
+    gap: 5vw;
+  }
+  main.container .card img {
+    width: 60vw;
+  }
+  main.container .card p {
+    margin: 10px 0;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 600px) and (min-width: 100px) {
+  .burger {
+    display: block;
+  }
+  .burger_instead {
+    display: none;
+  }
+}
+@media (max-width: 500px) and (min-width: 400px) {
+  .models .model .model_info button {
+    width: 30vw;
+    height: 4vh;
+  }
+  header {
+    gap: 1vh;
+  }
+  .header_content {
+    gap: 1vh;
+  }
+  .header_content h2 {
+    margin: 10px 0;
+  }
+  .models {
+    flex-wrap: wrap;
+  }
+  .models .model {
+    flex-basis: 100%;
+  }
+  main.container .card .card_info {
+    margin: 0;
+  }
+  main.container .card {
+    flex-direction: column;
+    gap: 20px;
+    height: 30vh;
+  }
+  main.container .card .card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main.container .card img {
+    width: 60vw;
+    margin-top: 10px;
+  }
+  main.container .card button {
+    height: 3vh;
+    margin: auto 0;
+  }
+  main.container .card p {
+    margin: 10px 0;
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 400px) and (min-width: 100px) {
+  header {
+    gap: 1vh;
+  }
+  .models .model .model_info button {
+    width: 30vw;
+    height: 4vh;
+  }
+  .header_content {
+    gap: 1vh;
+  }
+  .header_content h2 {
+    margin: 10px 0;
+  }
+  .models {
+    flex-wrap: wrap;
+  }
+  .models .model {
+    flex-basis: 100%;
+  }
+  main.container .card .card_info {
+    margin: 0;
+  }
+  main.container .card {
+    flex-direction: column;
+    gap: 20px;
+    height: 30vh;
+  }
+  main.container .card .card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main.container .card img {
+    width: 70vw;
+    margin-top: 10px;
+  }
+  main.container .card button {
+    height: 3vh;
+    margin: auto 0;
+  }
+  main.container .card p {
+    margin: 10px 0;
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=Main.css.map */
